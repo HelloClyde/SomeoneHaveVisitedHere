@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.fieldsoft.someonehavevisitedhere.MainFragmentActivity" >
+
+    <LinearLayout
+        android:id="@+id/ButtomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@color/ViewNormal" 
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical" >
+
+            
+            <Button
+                android:id="@+id/ButtonPublishNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/add"
+                android:text="@string/publish"
+                android:background="@null"
+                android:textColor="#999999"
+                android:onClick="ButtonPublishNoteOnClick"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <Button
+                android:id="@+id/ButtonFind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/find_b"
+                android:text="@string/discovery"
+                android:background="@null"
+                android:textColor="#45C01B"
+                android:onClick="ButtonFindOnClick"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <Button
+                android:id="@+id/ButtonMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/me"
+                android:text="@string/me"
+                android:background="@null"
+                android:textColor="#999999"
+                android:onClick="ButtonMeOnClick"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fieldsoft.someonehavevisitedhere.view.MyViewPager
+        android:id="@+id/MainViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ButtomLayout" >
+   	</com.fieldsoft.someonehavevisitedhere.view.MyViewPager>
+   	
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/BackGround"
+        android:layout_above="@id/ButtomLayout"></LinearLayout>
+
+</RelativeLayout>

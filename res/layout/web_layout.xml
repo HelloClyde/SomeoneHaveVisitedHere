@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.fieldsoft.someonehavevisitedhere.WebViewActivity" >
+
+    <RelativeLayout
+        android:id="@+id/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#393A3F"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/ReturnButton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:onClick="Return"
+            android:text="@string/Return"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/ReturnButton"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/TitleBar" >
+    </WebView>
+
+</RelativeLayout>

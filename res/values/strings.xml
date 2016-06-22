@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">到此一游</string>
+    <string name="publish">发布</string>
+    <string name="discovery">发现</string>
+    <string name="me">我</string>
+    <string name="mindinthismoment">这一刻的想法</string>
+	<string name="netposdisable">网络定位不可用</string>
+	<string name="netposenable">网络定位可用</string>
+	<string name="selectwaytogetpicture">选择获取照片的方式</string>
+	<string name="camera">相机</string>
+	<string name="picturelibary">图库</string>
+	<string name="getimagefail">获取图片失败</string>
+	<string name="entersdcard">请确认已经插入SD卡</string>
+	<string name="pleaseInputEmail">请输入邮箱</string>
+	<string name="pleaseInputPassword">请输入密码</string>
+	<string name="login">登录</string>
+	<string name="register">注册</string>
+	<string name="Logout">登出</string>
+	<string name="LoginSucceed">登录成功</string>
+	<string name="EmailOrPasswordIsEmpty">邮箱或者密码为空</string>
+	<string name="PleaseInputPasswordAgain">请再次输入一遍密码</string>
+	<string name="loading">载入中</string>
+	<string name="Publishing">发布中</string>
+	<string name="PasswordTooShort">密码过短</string>
+	<string name="PasswordNotSame">密码不一致</string>
+	<string name="ServerHostPath">http://115.29.79.16/SomeoneHaveVisitedHereServer/</string>
+	<string name="Return">返回</string>
+	<string name="NotLogined">未登录</string>
+	<string name="MyFoot">我的脚步</string>
+	<string name="Set">设置</string>
+	<string name="Admin">管理员</string>
+	<string name="User">会员</string>
+	<string name="AlreadyLogout">已经登出</string>
+	<string name="PublishTextIsEmpty">请输入一点感想</string>
+	<string name="ImageUploadFail">图片未上传成功</string>
+	<string name="SomeOneVisitedHere">有人来过这儿</string>
+	<string name="About">关于</string>
+</resources>

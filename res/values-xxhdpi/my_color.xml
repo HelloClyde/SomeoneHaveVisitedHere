@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ViewNormal">#FCFCFC</color>
+    <color name="BackGround">#EBEBEB</color>
+    <color name="ViewPress">#F0F0F0</color>
+    <color name="Title">#393A3F</color>
+    <color name="TitleFont">#FFFFFF</color>
+    <color name="UserEmail">#000000</color>
+    <color name="UserType">#999999</color>
+
+</resources>

@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#393A3F" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:text="@string/publish"
+            android:id="@+id/PublishButton"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <com.fieldsoft.someonehavevisitedhere.view.MyPositionView
+            android:id="@+id/PublishPos"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/Add_Time"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_above="@id/PublishPos"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+
+        <com.fieldsoft.someonehavevisitedhere.view.MyImageSelect
+            android:id="@+id/ImageSelect"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/Add_Time"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="SelectImage" />
+
+        <EditText
+            android:id="@+id/PublishText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ImageSelect"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/mindinthismoment"
+            android:inputType="textMultiLine"
+            android:maxLength="140" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>
